@@ -19,13 +19,29 @@ body{
 	text-align: center;
 }
 
-@media only screen and (max-width:945px)
+@media only screen and (max-width:1000px)
 {
+	h1{
+		font-size: 2em;
+	}
+	
+	a.whitetext{
+		font-size: 1em;
+	}
+
+	img{
+		max-width: 400px;
+		max-height: 400px;
+	}
+
 	h2{
+		padding-top: 10px;
 		color: rgb(255,255,255);
 		margin: 0px;
-		margin-right: 0px;
+		margin-right: 10px;
 		font-size: 1em;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 
 	nav{
@@ -37,7 +53,21 @@ body{
 		box-sizing:border-box;
 		text-align:center; 
 		font-size: 1em;
-		 
+		margin-bottom: 20px;
+		padding-bottom:20px;
+	}
+
+	section.halfwidth{
+		background-color:rgb(77,77,77);
+		margin:2%;
+		width:96%;
+		padding:2%;
+		box-sizing:border-box;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		flex-direction: row;
 	}
 }
 
