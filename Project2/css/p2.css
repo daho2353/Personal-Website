@@ -7,6 +7,7 @@ body{
 #container{ 
 	background-color:rgb(102,102,102);
 	width:100%;  
+	min-height: 100%;
 	margin:0px auto; 
 	padding:0px;
 	box-sizing:border-box;
@@ -19,57 +20,6 @@ body{
 	text-align: center;
 }
 
-@media only screen and (max-width:1000px)
-{
-	h1{
-		font-size: 2em;
-	}
-	
-	a.whitetext{
-		font-size: 1em;
-	}
-
-	img{
-		max-width: 400px;
-		max-height: 400px;
-	}
-
-	h2{
-		padding-top: 10px;
-		color: rgb(255,255,255);
-		margin: 0px;
-		margin-right: 10px;
-		font-size: 1em;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	nav{
-		
-		width:95%;
-		background-color:rgb(26,26,26);
-		margin:10px;
-		padding:0px;
-		box-sizing:border-box;
-		text-align:center; 
-		font-size: 1em;
-		margin-bottom: 20px;
-		padding-bottom:20px;
-	}
-
-	section.halfwidth{
-		background-color:rgb(77,77,77);
-		margin:2%;
-		width:96%;
-		padding:2%;
-		box-sizing:border-box;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 0px;
-		flex-direction: row;
-	}
-}
 
 h1{
 	color: rgb(255,255,255);
@@ -378,4 +328,78 @@ img.whitebackground
 img{
 	max-width:100%;
 	padding: 0px;
+}
+
+
+@media only screen and (max-width:1000px)
+{
+	h1{
+		font-size: 2em;
+	}
+	
+	h3{
+		font-size: 2em;
+	}
+
+	a.whitetext{
+		font-size: 1.5em;
+	}
+
+	#container{
+		height: 100%
+	}
+
+	img{
+		max-width: 400px;
+		max-height: 400px;
+	}
+
+	h2{
+		padding-top: 30px;
+		color: rgb(255,255,255);
+		margin: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+		font-size: 1.5em;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	p.smallheader{
+		font-size: 1.25em;
+	}
+
+	nav{
+		margin-left: 20px;
+		width:95%;
+		background-color:rgb(26,26,26);
+		margin:10px;
+		padding:0px;
+		box-sizing:border-box;
+		text-align:center; 
+		font-size: 1em;
+		margin-bottom: 20px;
+		padding-bottom:20px;
+	}
+
+	section.halfwidth{
+		background-color:rgb(77,77,77);
+		margin:2%;
+		width:96%;
+		padding:2%;
+		box-sizing:border-box;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		flex-direction: row;
+	}
+	
+	.pre{
+		font-size:1.5em;
+	}
+	
+	#article{
+		min-height:1500px;
+	}
 }
